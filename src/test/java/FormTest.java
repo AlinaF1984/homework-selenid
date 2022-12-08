@@ -21,7 +21,6 @@ public class FormTest {
         open("http://localhost:9999");
     }
 
-
     String bookDate(int days) {
         return LocalDate.now().plusDays(days).format(DateTimeFormatter.ofPattern("dd.MM.yyyy"));
     }
@@ -111,5 +110,3 @@ public class FormTest {
                 .shouldHave(text("Встреча успешно забронирована на " + meetingDateNearest));
     }
 }
-
-
